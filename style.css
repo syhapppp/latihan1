@@ -1,0 +1,386 @@
+/* Gaya untuk header website dan navigasi utama */
+body {
+  margin: 0;
+  background-color: #f1f4f8;
+  color: #243247;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header dan navigasi utama */
+.site-header {
+  padding: 32px 20px 20px;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(135deg, #123b5d, #167c80);
+}
+
+.site-header h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.site-header p {
+  margin: 0 0 24px;
+  color: #e2f2f2;
+}
+
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.site-header nav a {
+  padding: 10px 16px;
+  border: 1px solid rgb(255 255 255 / 35%);
+  border-radius: 999px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus-visible {
+  color: #123b5d;
+  background-color: #ffffff;
+}
+
+/* Tata letak dan tampilan konten utama */
+main {
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+main > table[role="presentation"] {
+  width: 100%;
+  border-spacing: 16px;
+}
+
+main > table[role="presentation"] > tbody > tr > td {
+  padding: 20px;
+  vertical-align: top;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+main > table[role="presentation"] > tbody > tr > td:first-child {
+  width: 28%;
+  background-color: #dce8f5;
+}
+
+/* Panel informasi tambahan di sisi kiri */
+main aside h2 {
+  margin-top: 0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #b8cbd5;
+  text-align: left;
+}
+
+main aside h3 {
+  margin: 22px 0 8px;
+  color: #167c80;
+}
+
+main aside p,
+main aside li {
+  line-height: 1.65;
+}
+
+main aside ul {
+  padding-left: 22px;
+}
+
+main aside li {
+  margin-bottom: 8px;
+}
+
+main aside a {
+  color: #075d68;
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+main aside a:hover,
+main aside a:focus-visible {
+  color: #123b5d;
+}
+
+main h2 {
+  color: #123b5d;
+  text-align: center;
+}
+
+main p,
+main blockquote,
+main details {
+  line-height: 1.7;
+  text-align: justify;
+}
+
+main blockquote {
+  margin: 20px 0;
+  padding: 12px 18px;
+  border-left: 4px solid #167c80;
+  background-color: #eef7f7;
+}
+
+main figure {
+  margin: 16px 0;
+}
+
+main figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+main figcaption {
+  margin-top: 8px;
+  color: #526274;
+  font-size: 0.9rem;
+}
+
+main section[id] {
+  scroll-margin-top: 16px;
+}
+
+/* Bagian informasi yang dapat dibuka-tutup */
+main details {
+  margin: 12px 0;
+  overflow: hidden;
+  border: 1px solid #c9dce4;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+main details summary {
+  padding: 14px 18px;
+  color: #123b5d;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #e8f1f6;
+}
+
+main details summary:hover,
+main details summary:focus-visible {
+  background-color: #dff1ef;
+}
+
+main details[open] summary {
+  border-bottom: 1px solid #c9dce4;
+}
+
+main details p {
+  margin: 0;
+  padding: 14px 18px;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.destination-grid > section {
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #f1f4f8;
+}
+
+.destination-grid h3 {
+  color: #167c80;
+}
+
+/* Tabel perbandingan destinasi */
+.table-scroll {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgb(18 59 93 / 10%);
+}
+
+.destination-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.destination-table caption {
+  padding: 14px 16px;
+  color: #526274;
+  font-weight: 600;
+  text-align: left;
+  background-color: #e8f1f6;
+}
+
+.destination-table th,
+.destination-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #dce5ec;
+}
+
+.destination-table th {
+  color: #ffffff;
+  background-color: #123b5d;
+}
+
+.destination-table tbody tr:nth-child(even) {
+  background-color: #f1f7f8;
+}
+
+.destination-table tbody tr:hover {
+  background-color: #dff1ef;
+}
+
+.destination-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Formulir pesan */
+main form fieldset {
+  padding: 20px;
+  border: 1px solid #c9dce4;
+  border-radius: 12px;
+  background-color: #f8fbfc;
+}
+
+main form legend {
+  padding: 0 8px;
+  color: #123b5d;
+  font-weight: 700;
+}
+
+main form fieldset > p {
+  margin: 16px 0;
+  text-align: left;
+}
+
+main form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #243247;
+  font-weight: 600;
+}
+
+main form input,
+main form select,
+main form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #b8cbd5;
+  border-radius: 7px;
+  color: #243247;
+  font: inherit;
+  background-color: #ffffff;
+}
+
+main form textarea {
+  resize: vertical;
+}
+
+main form input:focus,
+main form select:focus,
+main form textarea:focus {
+  border-color: #167c80;
+  outline: 3px solid rgb(22 124 128 / 18%);
+}
+
+main form button {
+  margin: 4px 8px 0 0;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 7px;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #167c80;
+}
+
+main form button:hover,
+main form button:focus-visible {
+  background-color: #123b5d;
+}
+
+main form button[type="reset"] {
+  color: #123b5d;
+  background-color: #dce8f5;
+}
+
+main form button[type="reset"]:hover,
+main form button[type="reset"]:focus-visible {
+  background-color: #c9dce4;
+}
+
+/* Footer website */
+footer {
+  margin-top: 32px;
+  padding: 28px 20px;
+  color: #e2f2f2;
+  text-align: center;
+  background: linear-gradient(135deg, #123b5d, #167c80);
+}
+
+footer address {
+  font-style: normal;
+  font-weight: 700;
+}
+
+footer p {
+  margin: 12px 0 0;
+  line-height: 1.6;
+}
+
+footer a {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid rgb(255 255 255 / 45%);
+  border-radius: 999px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus-visible {
+  color: #123b5d;
+  background-color: #ffffff;
+}
+
+/* Tips wisata dan daftar perlengkapan */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.tips-grid > section {
+  padding: 18px 22px;
+  border: 1px solid #dce5ec;
+  border-radius: 10px;
+  background-color: #f8fbfc;
+}
+
+.tips-grid h3 {
+  margin-top: 0;
+  color: #167c80;
+  line-height: 1.5;
+}
+
+.tips-grid ol,
+.tips-grid ul {
+  padding-left: 24px;
+}
+
+.tips-grid li {
+  margin: 10px 0;
+  padding-left: 4px;
+  line-height: 1.6;
+}
